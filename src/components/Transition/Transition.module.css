@@ -1,0 +1,41 @@
+.component {
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transform: translate(100%, 0);
+}
+
+.currentStep {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.entering {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+@keyframes enteringForward {
+    from {
+        opacity: 0;
+        transform: translate(100%, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes enteringBackward {
+    from {
+        opacity: 0;
+        transform: translate(-100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

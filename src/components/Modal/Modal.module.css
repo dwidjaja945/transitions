@@ -1,0 +1,65 @@
+button {
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    min-height: 300px;
+    min-width: 400px;
+    width: 600px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.header {
+    background-color: blue;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header>* {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header button {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.modalContent {
+    height: auto;
+}
+
+.footer {
+    background-color: #eeeeee;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 0 10px
+}
